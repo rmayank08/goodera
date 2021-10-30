@@ -6,13 +6,13 @@
                     Sign In
                 </div>
                 <div class="col-12 text-center mt-4">
-                    <input class="col-8" type="text" placeholder="username"/>
+                    <input [(ngModel)]="username" class="col-8" type="text" placeholder="username"/>
                 </div>
                 <div class="col-12 text-center mt-4">
-                    <input class="col-8" type="password" placeholder="password"/>
+                    <input [(ngModel)]="password" class="col-8" type="password" placeholder="password"/>
                 </div>
                 <div class="col-12 text-center mt-4">
-                    <button type="button" class="btn-signin">Log In</button>
+                    <button (click)="logInUser()" type="button" class="btn-signin">Log In</button>
                 </div>
             </div>
         </div>

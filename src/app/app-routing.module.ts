@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AuthGuard } from './auth.guard';
 import { JobsListComponent } from './jobs-list/jobs-list.component';
 import { LoginComponent } from './login/login.component';
 
@@ -11,7 +12,13 @@ const routes: Routes = [
   },
   {
     path: 'jobs-list',
-    component: JobsListComponent
+    component: JobsListComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'login'
   }
 ];
 
