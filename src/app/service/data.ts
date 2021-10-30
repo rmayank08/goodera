@@ -22,7 +22,7 @@ export const data = [
         "type": "external",
         "publication_date": "2021-08-04T00:04:04Z",
         "id": 5690412,
-        "location": "Berlin, Germany",
+        "location": "Mumbai, India",
         "level": "senior",
         "tags": [],
         "company": {
@@ -38,7 +38,7 @@ export const data = [
         "type": "external",
         "publication_date": "2021-08-04T00:04:04Z",
         "id": 5690413,
-        "location": "Berlin, Germany",
+        "location": "Delhi, India",
         "level": "senior",
         "tags": [],
         "company": {
@@ -54,7 +54,7 @@ export const data = [
         "type": "external",
         "publication_date": "2021-08-04T00:04:04Z",
         "id": 5690414,
-        "location": "Berlin, Germany",
+        "location": "Belfast, UK",
         "level": "senior",
         "tags": [],
         "company": {
@@ -70,7 +70,7 @@ export const data = [
         "type": "external",
         "publication_date": "2021-08-04T00:04:04Z",
         "id": 5690415,
-        "location": "Berlin, Germany",
+        "location": "London, UK",
         "level": "senior",
         "tags": [],
         "company": {
@@ -86,7 +86,7 @@ export const data = [
         "type": "external",
         "publication_date": "2021-08-04T00:04:04Z",
         "id": 5690416,
-        "location": "Berlin, Germany",
+        "location": "New York, US",
         "level": "senior",
         "tags": [],
         "company": {
