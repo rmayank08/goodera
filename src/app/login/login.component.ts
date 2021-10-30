@@ -16,7 +16,6 @@ export class LoginComponent implements OnInit {
   logInUser() {
     this.authService.loginUser(this.username, this.password).subscribe(
       res => {
-        console.log(res)
         if (res) {
           this.router.navigate(['/jobs-list']);
         }
