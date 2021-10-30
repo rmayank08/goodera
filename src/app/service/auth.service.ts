@@ -11,7 +11,6 @@ export class AuthService {
   password = 'test';
 
   loginUser(username, password) {
-    console.log(username, password)
     if (this.username === username && this.password === password) {
       this._isLoggedIn.next(true);
       return of(true);
