@@ -20,13 +20,17 @@ export class JobsService {
     return of(null);
   }
 
-  searchJobs(text: string): Observable<Job[]> {
-    text = text.toLocaleLowerCase();
-    if (!text.trim()) {
+  searchJobs(text: string, locationText: string): Observable<Job[]> {
+    text = text ? text.trim().toLocaleLowerCase() : null;
+    locationText = locationText ? locationText.trim().toLocaleLowerCase() : null;
+    if (!text && !locationText) {
       return of([...data]);
     }
     const filteredJobs = data.filter(j =>
-      j.title.toLocaleLowerCase().includes(text)
+      locationText ?
+        j.title.toLocaleLowerCase().includes(text) &&
+        j.location.toLocaleLowerCase().includes(locationText) :
+        j.title.toLocaleLowerCase().includes(text)
     );
     return of([...filteredJobs]);
   }

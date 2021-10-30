@@ -4,7 +4,7 @@
 
 .btn-search {
     border: 0;
-    background: #e58b9b;
+    background: #ec407a;
     color: white;
     padding: 5px 50px;
     font-weight: 600;
@@ -20,4 +20,12 @@
 
 input {
     outline: none;
+}
+
+.btn-clear {
+    margin-left: 10px;
+    border: 1px solid gray;
+    background: white;
+    border-radius: 10px;
+    padding: 5px 10px;
 }

@@ -15,6 +15,12 @@ export class JobsListComponent implements OnInit {
 
   constructor(private jobService: JobsService) { }
 
+  clear() {
+    this.searchText = null;
+    this.locationText = null;
+    this.getAllJobs();
+  }
+
   getAllJobs() {
     this.jobService.getAllJobs().subscribe(
       res => {
@@ -24,7 +30,7 @@ export class JobsListComponent implements OnInit {
   }
 
   searchJobs() {
-    this.jobService.searchJobs(this.searchText).subscribe(
+    this.jobService.searchJobs(this.searchText, this.locationText).subscribe(
       res => {
         this.allJobs = res;
       }
